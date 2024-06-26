@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body{
+    background-color: #697585;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.resultCard,
+.inputCard {
+    background-color: #8D8C97;
+    border: 1px solid #786ee6;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.display {
+    width: 100%;
+}
+
+.dis {
+    background-color: #998F66;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4%;
+}
+
+.dis:not(:last-child) {
+    margin-right: 10px;
+}
+
+button{
+    background-color: #00ffcc;
+    font-size: 16px;
+    border: solid 0.2px #001a14;
+    border-radius: 4%;
+    color: #000000;
+    width: 120px; 
+    height: 35px; 
+}
+
+button:hover{
+    border-color: #FF8C42;
+}
+
+input{
+    background-color: #247BA0;
+    border: solid 0.1px #FFE066;
+}
+
+#birthday {
+    width: 120px; 
+    height: 30px; 
+    border-radius: 4%;
+}
+
+h1{
+    font-family: 'Tilt Prism', cursive;
+}
+.numbers{
+    font-size: 35px;
+    color: #2F131E;
+    font-family: 'VT323', monospace;
+    display: block;
+}

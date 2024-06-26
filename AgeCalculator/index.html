@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AgeCalcualtor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Age Calcualtor</h1>
+        <div class="resultCard">
+            <table class="display">
+                <tr>
+                    <td class="dis"><span class="numbers" id="yearValue">00 <br></span><span>Years </span></td>
+                    <td class="dis"><span class="numbers" id="monthValue">00 <br></span><span>Months </span></td>
+                    <td class="dis"><span class="numbers" id="dateValue">00 <br></span><span>Days </span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="inputCard">
+            <table class="display">
+                <tr>
+                    <td><input type="date" id="birthday" required></td>
+                    <td><button id="calculate">Calculate Age</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+<script>
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById('birthday').setAttribute('max', today);
+</script>
+
+</html>
